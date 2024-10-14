@@ -10,14 +10,47 @@ export default function Home() {
   // animate cursor
   useEffect(() => {
     const colors = [
-      "#a0c4ff", "#9bb8ff", "#96adff", "#90a1ff", "#8b96ff", "#8691ff",
-      "#808aff", "#7b84ff", "#767dff", "#7177ff", "#6c70ff", "#666aff",
-      "#6163ff", "#5b5dff", "#5656ff", "#504fff", "#4b49ff", "#4642ff",
-      "#403cff", "#3b35ff", "#362fff", "#3028ff", "#2b22ff", "#261bff",
-      "#2015ff", "#1b0eff", "#1507ff", "#1000ff", "#0e00f2", "#0d00e5",
-      "#0b00d9", "#0a00cc", "#0800bf", "#0700b3", "#0500a6", "#040099",
-      "#03008c", "#020080", "#010073", "#000066"
-    ];    
+      "#a0c4ff",
+      "#9bb8ff",
+      "#96adff",
+      "#90a1ff",
+      "#8b96ff",
+      "#8691ff",
+      "#808aff",
+      "#7b84ff",
+      "#767dff",
+      "#7177ff",
+      "#6c70ff",
+      "#666aff",
+      "#6163ff",
+      "#5b5dff",
+      "#5656ff",
+      "#504fff",
+      "#4b49ff",
+      "#4642ff",
+      "#403cff",
+      "#3b35ff",
+      "#362fff",
+      "#3028ff",
+      "#2b22ff",
+      "#261bff",
+      "#2015ff",
+      "#1b0eff",
+      "#1507ff",
+      "#1000ff",
+      "#0e00f2",
+      "#0d00e5",
+      "#0b00d9",
+      "#0a00cc",
+      "#0800bf",
+      "#0700b3",
+      "#0500a6",
+      "#040099",
+      "#03008c",
+      "#020080",
+      "#010073",
+      "#000066",
+    ];
 
     const circles = circlesRef.current;
 
@@ -46,7 +79,9 @@ export default function Home() {
         circle.style.top = `${y - 10}px`;
 
         // Scaling based on index
-        circle.style.transform = `scale(${(circles.length - index) / circles.length})`;
+        circle.style.transform = `scale(${
+          (circles.length - index) / circles.length
+        })`;
 
         circle.x = x;
         circle.y = y;
@@ -71,17 +106,19 @@ export default function Home() {
 
   return (
     <main className="relative bg-[#101010] min-h-screen w-full">
+      <Navbar />
       {/* Circles */}
-      {Array(40).fill().map((_, index) => (
-        <div
-          key={index}
-          ref={(el) => (circlesRef.current[index] = el)}
-          className="circle fixed top-0 left-0 w-5 h-5 rounded-full pointer-events-none z-[99999999]"
-        />
-      ))}
+      {/* {Array(40)
+        .fill()
+        .map((_, index) => (
+          <div
+            key={index}
+            ref={(el) => (circlesRef.current[index] = el)}
+            className="circle fixed top-0 left-0 w-5 h-5 rounded-full pointer-events-none z-[99999999]"
+          />
+        ))} */}
 
-      <Navbar/>
-      <Hero/>
+      <Hero />
     </main>
   );
 }
