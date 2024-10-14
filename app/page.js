@@ -1,18 +1,23 @@
 "use client";
+import Hero from "@/components/Hero";
+import Navbar from "@/components/Navbar";
 import { useEffect, useRef } from "react";
-import AnimatedGradient from "@/components/AnimatedGradient/AnimatedGradient";
 
 export default function Home() {
   const coords = useRef({ x: 0, y: 0 });
   const circlesRef = useRef([]);
 
+  // animate cursor
   useEffect(() => {
     const colors = [
-      "#ffb56b", "#fdaf69", "#f89d63", "#f59761", "#ef865e", "#ec805d",
-      "#e36e5c", "#df685c", "#d5585c", "#d1525c", "#c5415d", "#c03b5d",
-      "#b22c5e", "#ac265e", "#9c155f", "#950f5f", "#830060", "#7c0060",
-      "#680060", "#60005f", "#48005f", "#3d005e",
-    ];
+      "#a0c4ff", "#9bb8ff", "#96adff", "#90a1ff", "#8b96ff", "#8691ff",
+      "#808aff", "#7b84ff", "#767dff", "#7177ff", "#6c70ff", "#666aff",
+      "#6163ff", "#5b5dff", "#5656ff", "#504fff", "#4b49ff", "#4642ff",
+      "#403cff", "#3b35ff", "#362fff", "#3028ff", "#2b22ff", "#261bff",
+      "#2015ff", "#1b0eff", "#1507ff", "#1000ff", "#0e00f2", "#0d00e5",
+      "#0b00d9", "#0a00cc", "#0800bf", "#0700b3", "#0500a6", "#040099",
+      "#03008c", "#020080", "#010073", "#000066"
+    ];    
 
     const circles = circlesRef.current;
 
@@ -37,8 +42,8 @@ export default function Home() {
 
       circles.forEach((circle, index) => {
         // Positioning the circles
-        circle.style.left = `${x - 12}px`;
-        circle.style.top = `${y - 12}px`;
+        circle.style.left = `${x - 10}px`;
+        circle.style.top = `${y - 10}px`;
 
         // Scaling based on index
         circle.style.transform = `scale(${(circles.length - index) / circles.length})`;
@@ -48,8 +53,8 @@ export default function Home() {
 
         // Get the next circle's position to calculate smooth trailing
         const nextCircle = circles[index + 1] || circles[0];
-        x += (nextCircle.x - x) * 0.3;
-        y += (nextCircle.y - y) * 0.3;
+        x += (nextCircle.x - x) * 0.4;
+        y += (nextCircle.y - y) * 0.4;
       });
 
       requestAnimationFrame(animateCircles);
@@ -65,18 +70,18 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="relative">
-      <AnimatedGradient>
-        <p>hover to see the magic</p>
-      </AnimatedGradient>
+    <main className="relative bg-[#101010] min-h-screen w-full">
       {/* Circles */}
-      {Array(20).fill().map((_, index) => (
+      {Array(40).fill().map((_, index) => (
         <div
           key={index}
           ref={(el) => (circlesRef.current[index] = el)}
-          className="circle fixed top-0 left-0 w-6 h-6 rounded-full pointer-events-none z-[99999999]"
+          className="circle fixed top-0 left-0 w-5 h-5 rounded-full pointer-events-none z-[99999999]"
         />
       ))}
+
+      <Navbar/>
+      <Hero/>
     </main>
   );
 }
