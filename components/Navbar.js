@@ -3,8 +3,8 @@
 import React, { useState } from "react";
 import { NAVIGATION_LINKS } from "@/constants";
 import Link from "next/link";
-import { FaTimes } from "react-icons/fa";
-import { FaBars } from "react-icons/fa6";
+import { CgMenuRight } from "react-icons/cg";
+import { CgClose } from "react-icons/cg";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -70,17 +70,17 @@ const Navbar = () => {
   const formattedHours = hours % 12 || 12; // Convert 24-hour to 12-hour format
 
   return (
-    <nav className="fixed top-0 z-[9999] w-full flex items-center justify-center py-8 px-4">
+    <nav className="fixed top-0 z-[9999] w-full flex justify-center items-center py-8 px-4 bg-[#101010]/80 backdrop-blur-xl">
       <div className="w-full max-w-[1200px] flex items-center justify-between">
-        {/* Desktop Menu */}
-        <div className="w-full flex flex-col items-center justify-center">
+        <div className="max-lg:w-full flex flex-col items-center justify-center">
+          {/* Desktop Menu */}
           <div className="flex items-center max-lg:justify-between gap-6 max-lg:w-full">
             <Link
               href="#home"
               onClick={(e) => handleLinkClick(e, "#home")}
               className="font-bold lg:text-3xl text-2xl uppercase text-[#7F8188] bg-clip-text text-transparent bg-gradient-to-b from-white to-gray-700"
             >
-              MAHFUJUL SAGOR
+              MAS
             </Link>
             <ul className="items-center gap-6 lg:flex hidden">
               {NAVIGATION_LINKS.map((item, index) => (
@@ -115,9 +115,9 @@ const Navbar = () => {
                     onClick={toggleMenu}
                   >
                     {isOpen ? (
-                      <FaTimes className="h-6 w-6" />
+                      <CgClose className="h-8 w-8" />
                     ) : (
-                      <FaBars className="h-6 w-6" />
+                      <CgMenuRight className="h-8 w-8"/>
                     )}
                   </button>
                 </div>
