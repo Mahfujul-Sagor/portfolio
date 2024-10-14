@@ -3,6 +3,8 @@
 import React, { useState } from "react";
 import { NAVIGATION_LINKS } from "@/constants";
 import Link from "next/link";
+import { FaTimes } from "react-icons/fa";
+import { FaBars } from "react-icons/fa6";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -47,7 +49,15 @@ const Navbar = () => {
   const month = monthNames[now.getMonth()];
 
   // Get the current day of the week
-  const dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+  const dayNames = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
   const dayOfWeek = dayNames[now.getDay()]; // Returns 0-6, where 0 is Sunday
 
   // Get current date
@@ -57,46 +67,94 @@ const Navbar = () => {
   const hours = now.getHours();
   const minutes = now.getMinutes().toString().padStart(2, "0");
   const ampm = hours >= 12 ? "PM" : "AM";
-  const formattedHours = (hours % 12) || 12; // Convert 24-hour to 12-hour format
+  const formattedHours = hours % 12 || 12; // Convert 24-hour to 12-hour format
 
   return (
-    <nav className="fixed top-0 z-[9999] w-full flex items-center justify-center min-h-[100px] px-4">
+    <nav className="fixed top-0 z-[9999] w-full flex items-center justify-center py-8 px-4">
       <div className="w-full max-w-[1200px] flex items-center justify-between">
-        <div className="flex items-center gap-8">
-          <Link
-            href="#home"
-            onClick={(e) => handleLinkClick(e, "#home")}
-            className="font-bold lg:text-3xl text-2xl uppercase text-[#7F8188] bg-clip-text text-transparent bg-gradient-to-b from-white to-gray-700"
-          >
-            MAHFUJUL SAGOR
-          </Link>
-          <ul className="items-center gap-4 flex">
-            {NAVIGATION_LINKS.map((item, index) => (
-              <li key={index}>
-                <Link
-                  href={item.href}
-                  className="text-[#7F8188] hover:text-white font-medium"
-                  onClick={(e) => handleLinkClick(e, item.href)}
-                >
-                  {item.label}
-                </Link>
-              </li>
-            ))}
+        {/* Desktop Menu */}
+        <div className="w-full flex flex-col items-center justify-center">
+          <div className="flex items-center max-lg:justify-between gap-6 max-lg:w-full">
             <Link
-              href="/about"
-              className="text-[#7F8188] hover:text-white font-medium"
+              href="#home"
+              onClick={(e) => handleLinkClick(e, "#home")}
+              className="font-bold lg:text-3xl text-2xl uppercase text-[#7F8188] bg-clip-text text-transparent bg-gradient-to-b from-white to-gray-700"
             >
-              About
+              MAHFUJUL SAGOR
             </Link>
-            <Link
-              href="/resume"
-              className="text-[#7F8188] hover:text-white font-medium"
-            >
-              Resume
-            </Link>
-          </ul>
+            <ul className="items-center gap-6 lg:flex hidden">
+              {NAVIGATION_LINKS.map((item, index) => (
+                <li key={index}>
+                  <Link
+                    href={item.href}
+                    className="text-[#7F8188] hover:text-white font-medium"
+                    onClick={(e) => handleLinkClick(e, item.href)}
+                  >
+                    {item.label}
+                  </Link>
+                </li>
+              ))}
+              <Link
+                href="/about"
+                className="text-[#7F8188] hover:text-white font-medium"
+              >
+                About
+              </Link>
+              <Link
+                href="/resume"
+                className="text-[#7F8188] hover:text-white font-medium"
+              >
+                Resume
+              </Link>
+            </ul>
+            <div className="lg:hidden flex">
+              <div className="">
+                <div className="flex items-center gap-4">
+                  <button
+                    className="focus:outline-none lg-hidden text-[#7F8188]"
+                    onClick={toggleMenu}
+                  >
+                    {isOpen ? (
+                      <FaTimes className="h-6 w-6" />
+                    ) : (
+                      <FaBars className="h-6 w-6" />
+                    )}
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* Mobile Menu */}
+          {isOpen && (
+            <ul className="items-center gap-6 lg:hidden justify-center flex flex-col w-full my-6">
+              {NAVIGATION_LINKS.map((item, index) => (
+                <li key={index}>
+                  <Link
+                    href={item.href}
+                    className="text-[#7F8188] hover:text-white font-medium"
+                    onClick={(e) => handleLinkClick(e, item.href)}
+                  >
+                    {item.label}
+                  </Link>
+                </li>
+              ))}
+              <Link
+                href="/about"
+                className="text-[#7F8188] hover:text-white font-medium"
+              >
+                About
+              </Link>
+              <Link
+                href="/resume"
+                className="text-[#7F8188] hover:text-white font-medium"
+              >
+                Resume
+              </Link>
+            </ul>
+          )}
         </div>
-        <div className="text-[#7F8188] font-medium md:flex items-center gap-4 hidden">
+        {/* Time */}
+        <div className="text-[#7F8188] font-medium lg:flex items-center gap-4 hidden">
           <p>
             {dayOfWeek},&nbsp;{month} {date}&nbsp;
           </p>
