@@ -105,18 +105,18 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="relative bg-[#101010] min-h-screen w-full">
+    <main className="relative min-h-screen w-full">
       <Navbar />
       {/* Circles */}
-      {/* {Array(40)
+      {Array(40)
         .fill()
         .map((_, index) => (
           <div
             key={index}
             ref={(el) => (circlesRef.current[index] = el)}
-            className="circle fixed top-0 left-0 w-5 h-5 rounded-full pointer-events-none z-[99999999]"
+            className="circle fixed top-0 left-0 w-4 h-4 rounded-full pointer-events-none z-[99999999] hidden lg:flex"
           />
-        ))} */}
+        ))}
 
       <Hero />
     </main>

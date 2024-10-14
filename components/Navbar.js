@@ -26,18 +26,51 @@ const Navbar = () => {
     }
     setIsOpen(false);
   };
+
+  const now = new Date();
+
+  // Get current month as a short word
+  const monthNames = [
+    "Jan",
+    "Feb",
+    "Mar",
+    "Apr",
+    "May",
+    "Jun",
+    "Jul",
+    "Aug",
+    "Sep",
+    "Oct",
+    "Nov",
+    "Dec",
+  ];
+  const month = monthNames[now.getMonth()];
+
+  // Get the current day of the week
+  const dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+  const dayOfWeek = dayNames[now.getDay()]; // Returns 0-6, where 0 is Sunday
+
+  // Get current date
+  const date = now.getDate();
+
+  // Get current time in 12-hour format with AM/PM
+  const hours = now.getHours();
+  const minutes = now.getMinutes().toString().padStart(2, "0");
+  const ampm = hours >= 12 ? "PM" : "AM";
+  const formattedHours = (hours % 12) || 12; // Convert 24-hour to 12-hour format
+
   return (
-    <nav className="fixed top-0 z-[9999] w-full flex items-center justify-center min-h-[80px]">
+    <nav className="fixed top-0 z-[9999] w-full flex items-center justify-center min-h-[100px] px-4">
       <div className="w-full max-w-[1200px] flex items-center justify-between">
         <div className="flex items-center gap-8">
           <Link
             href="#home"
             onClick={(e) => handleLinkClick(e, "#home")}
-            className="font-bold text-2xl uppercase text-[#7F8188] bg-clip-text text-transparent bg-gradient-to-b from-white to-gray-700"
+            className="font-bold lg:text-3xl text-2xl uppercase text-[#7F8188] bg-clip-text text-transparent bg-gradient-to-b from-white to-gray-700"
           >
-            M
+            MAHFUJUL SAGOR
           </Link>
-          <ul className="flex items-center gap-4">
+          <ul className="items-center gap-4 flex">
             {NAVIGATION_LINKS.map((item, index) => (
               <li key={index}>
                 <Link
@@ -62,6 +95,14 @@ const Navbar = () => {
               Resume
             </Link>
           </ul>
+        </div>
+        <div className="text-[#7F8188] font-medium md:flex items-center gap-4 hidden">
+          <p>
+            {dayOfWeek},&nbsp;{month} {date}&nbsp;
+          </p>
+          <p>
+            {formattedHours}:{minutes} {ampm}
+          </p>
         </div>
       </div>
     </nav>
