@@ -4,7 +4,7 @@ import WorkCard from "./WorkCard";
 
 const Work = () => {
   return (
-    <section id="work" className="w-full relative z-10">
+    <section id="work" className="w-full">
       <div className="w-full max-w-[1200px] flex justify-center items-center">
         {PROJECTS.map((project, _) => {
           <div key={project.id} className="flex flex-col items-center gap-20">
