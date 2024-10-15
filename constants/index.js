@@ -6,5 +6,5 @@ export const NAVIGATION_LINKS = [
 
 export const HERO = {
   name: "Mahfujul Sagor",
-  description: "I build apps, and websites that blows your mind",
+  description: "Building connections through every line of code.",
 };

@@ -70,7 +70,7 @@ const Navbar = () => {
   const formattedHours = hours % 12 || 12; // Convert 24-hour to 12-hour format
 
   return (
-    <nav className="fixed top-0 z-[9999] w-full flex justify-center items-center py-8 px-4 bg-[#101010]/80 backdrop-blur-xl">
+    <nav className="fixed top-0 z-[9999] w-full flex justify-center items-center py-6 px-4 bg-[#101010]/80 backdrop-blur-md">
       <div className="w-full max-w-[1200px] flex items-center justify-between">
         <div className="max-lg:w-full flex flex-col items-center justify-center">
           {/* Desktop Menu */}
