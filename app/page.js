@@ -1,6 +1,5 @@
 "use client";
 import Hero from "@/components/Hero";
-import Navbar from "@/components/Navbar";
 // import { useEffect, useRef } from "react";
 
 export default function Home() {
@@ -106,7 +105,6 @@ export default function Home() {
 
   return (
     <main className="relative min-h-screen w-full">
-      <Navbar />
       {/* Circles */}
       {/* {Array(40)
         .fill()
