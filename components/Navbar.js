@@ -100,11 +100,17 @@ const Navbar = () => {
               >
                 About
               </Link>
-              <Link
+              {/* <Link
                 href="/resume"
                 className="text-[#7F8188] hover:text-white font-medium"
               >
                 Resume
+              </Link> */}
+              <Link
+                href="/contact"
+                className="text-[#7F8188] hover:text-white font-medium"
+              >
+                Contact
               </Link>
             </ul>
             <div className="lg:hidden flex">
@@ -144,11 +150,17 @@ const Navbar = () => {
               >
                 About
               </Link>
-              <Link
+              {/* <Link
                 href="/resume"
                 className="text-[#7F8188] hover:text-white font-medium"
               >
                 Resume
+              </Link> */}
+              <Link
+                href="/contact"
+                className="text-[#7F8188] hover:text-white font-medium"
+              >
+                Contact
               </Link>
             </ul>
           )}

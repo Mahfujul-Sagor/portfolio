@@ -1,7 +1,7 @@
 export const NAVIGATION_LINKS = [
   { label: "Work", href: "#work" },
-  { label: "Skills", href: "#skills" },
-  { label: "Contact", href: "#contact" },
+  // { label: "Skills", href: "#skills" },
+  // { label: "Contact", href: "#contact" },
 ];
 
 export const HERO = {
