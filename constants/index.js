@@ -1,6 +1,7 @@
 export const NAVIGATION_LINKS = [
-  { label: "Work", href: "#work" },
-  // { label: "Contact", href: "#contact" },
+  { label: "Work", href: "/" },
+  {label: 'About', href: '/about'},
+  { label: "Contact", href: "/contact" },
 ];
 
 export const HERO = {
@@ -16,6 +17,7 @@ export const PROJECTS = [
     description: "Description 1",
     githubLink: "https://github.com/Mahfujul-Sagor/next-portfolio",
     liveLink: "https://github.com/Mahfujul-Sagor/next-portfolio",
+    mockup: "../public/mockups/desktop.avif",
   },
   {
     id: 2,
@@ -24,6 +26,7 @@ export const PROJECTS = [
     description: "Description 2",
     githubLink: "https://github.com/Mahfujul-Sagor/next-portfolio",
     liveLink: "https://github.com/Mahfujul-Sagor/next-portfolio",
+    mockup: "../public/mockups/desktop.avif",
   },
   {
     id: 3,
@@ -32,6 +35,7 @@ export const PROJECTS = [
     description: "Description 3",
     githubLink: "https://github.com/Mahfujul-Sagor/next-portfolio",
     liveLink: "https://github.com/Mahfujul-Sagor/next-portfolio",
+    mockup: "../public/mockups/desktop.avif",
   },
   {
     id: 4,
@@ -40,5 +44,6 @@ export const PROJECTS = [
     description: "Description 4",
     githubLink: "https://github.com/Mahfujul-Sagor/next-portfolio",
     liveLink: "https://github.com/Mahfujul-Sagor/next-portfolio",
+    mockup: "../public/mockups/desktop.avif",
   }
 ];

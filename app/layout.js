@@ -1,6 +1,7 @@
 import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 const robotoRegular = localFont({
   src: "./fonts/Roboto-Regular.ttf",
@@ -21,7 +22,8 @@ export default function RootLayout({ children }) {
         style={{ fontFamily: "var(--font-roboto-regular), sans-serif" }}
       >
         <Navbar />
-        {children}
+        <div className="w-full px-4">{children}</div>
+        <Footer/>
       </body>
     </html>
   );

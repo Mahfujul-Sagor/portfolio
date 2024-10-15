@@ -1,5 +1,6 @@
 "use client";
 import Hero from "@/components/Hero";
+import Work from "@/components/Work";
 // import { useEffect, useRef } from "react";
 
 export default function Home() {
@@ -117,6 +118,7 @@ export default function Home() {
         ))} */}
 
       <Hero />
+      <Work />
     </main>
   );
 }

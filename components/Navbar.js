@@ -13,22 +13,6 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
 
-  const handleLinkClick = (e, href) => {
-    e.preventDefault();
-    const targetElement = document.querySelector(href);
-    if (targetElement) {
-      const offset = -85;
-      const elementPosition = targetElement.getBoundingClientRect().top;
-      const offsetPosition = elementPosition + window.scrollY + offset;
-
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: "smooth",
-      });
-    }
-    setIsOpen(false);
-  };
-
   const now = new Date();
 
   // Get current month as a short word
@@ -70,14 +54,13 @@ const Navbar = () => {
   const formattedHours = hours % 12 || 12; // Convert 24-hour to 12-hour format
 
   return (
-    <nav className="fixed top-0 z-[9999] w-full flex justify-center items-center py-6 px-4 bg-[#101010]/80 backdrop-blur-md">
+    <nav className="fixed top-0 z-[9999] w-full flex justify-center items-center py-6 px-6 bg-[#101010]/80 backdrop-blur-md">
       <div className="w-full max-w-[1200px] flex items-center justify-between">
         <div className="max-lg:w-full flex flex-col items-center justify-center">
           {/* Desktop Menu */}
           <div className="flex items-center max-lg:justify-between gap-6 max-lg:w-full">
             <Link
-              href="#home"
-              onClick={(e) => handleLinkClick(e, "#home")}
+              href="/"
               className="font-bold lg:text-3xl text-2xl uppercase text-[#7F8188] bg-clip-text text-transparent bg-gradient-to-b from-white to-gray-700"
             >
               MAS
@@ -88,30 +71,12 @@ const Navbar = () => {
                   <Link
                     href={item.href}
                     className="text-[#7F8188] hover:text-white font-medium"
-                    onClick={(e) => handleLinkClick(e, item.href)}
+                    onClick={()=> setIsOpen(!open)}
                   >
                     {item.label}
                   </Link>
                 </li>
               ))}
-              <Link
-                href="/about"
-                className="text-[#7F8188] hover:text-white font-medium"
-              >
-                About
-              </Link>
-              {/* <Link
-                href="/resume"
-                className="text-[#7F8188] hover:text-white font-medium"
-              >
-                Resume
-              </Link> */}
-              <Link
-                href="/contact"
-                className="text-[#7F8188] hover:text-white font-medium"
-              >
-                Contact
-              </Link>
             </ul>
             <div className="lg:hidden flex">
               <div className="">
@@ -138,30 +103,12 @@ const Navbar = () => {
                   <Link
                     href={item.href}
                     className="text-[#7F8188] hover:text-white font-medium"
-                    onClick={(e) => handleLinkClick(e, item.href)}
+                    onClick={()=> setIsOpen(!open)}
                   >
                     {item.label}
                   </Link>
                 </li>
               ))}
-              <Link
-                href="/about"
-                className="text-[#7F8188] hover:text-white font-medium"
-              >
-                About
-              </Link>
-              {/* <Link
-                href="/resume"
-                className="text-[#7F8188] hover:text-white font-medium"
-              >
-                Resume
-              </Link> */}
-              <Link
-                href="/contact"
-                className="text-[#7F8188] hover:text-white font-medium"
-              >
-                Contact
-              </Link>
             </ul>
           )}
         </div>
