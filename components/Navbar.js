@@ -55,7 +55,7 @@ const Navbar = () => {
 
   return (
     <nav className="fixed top-0 z-[9999] w-full flex justify-center items-center py-6 px-6 bg-[#101010]/80 backdrop-blur-md">
-      <div className="w-full max-w-[1200px] flex items-center justify-between">
+      <div className="w-full max-w-[1300px] flex items-center justify-between">
         <div className="max-lg:w-full flex flex-col items-center justify-center">
           {/* Desktop Menu */}
           <div className="flex items-center max-lg:justify-between gap-6 max-lg:w-full">

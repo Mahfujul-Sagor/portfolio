@@ -1,34 +1,25 @@
-import Image from 'next/image';
-import Link from 'next/link';
-import React from 'react'
+import Image from "next/image";
+import React from "react";
 
-const WorkCard = ({
-  width,
-  title,
-  description,
-  image,
-  githubLink,
-  liveLink,
-  mockup,
-}) => {
+const WorkCard = ({description, title, image, width, top, backgroundColor, position}) => {
   return (
-    <div className={`w-[${width}px] sticky top-0 rounded-[4rem] bg-[#1E1D1C] border border-zinc-800 text-white`}>
+    <div 
+      className={`${position} text-white border border-zinc-800/50 w-full rounded-[4rem] min-h-[750px] p-8 text-center`}
+      style={{
+        maxWidth: width,
+        top: top ? top : '',
+        backgroundColor: backgroundColor,
+      }}
+      >
       <div>
-        <h3>{title}</h3>
+        <h2>{title}</h2>
+        <p>{description}</p>
       </div>
       <div>
-        <div>
-          <p>{type}</p>
-          <p>{description}</p>
-          <Link href={githubLink}> Github</Link>
-          <Link href={liveLink}>Visit</Link>
-        </div>
-        <div>
-          <Image src={mockup} alt='mockup' height={400} width={400} className=''/>
-        </div>
+        {image}
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default WorkCard;
