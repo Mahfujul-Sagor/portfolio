@@ -12,7 +12,7 @@ const WorkCard = ({
   mockup,
 }) => {
   return (
-    <div className={`w-[${width}px] rounded-[4rem] bg-[#1E1D1C] border border-zinc-800 text-white`}>
+    <div className={`w-[${width}px] sticky top-0 rounded-[4rem] bg-[#1E1D1C] border border-zinc-800 text-white`}>
       <div>
         <h3>{title}</h3>
       </div>

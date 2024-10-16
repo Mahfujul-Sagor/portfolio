@@ -26,8 +26,8 @@ const Hero = () => {
           <h2 className='lg:text-3xl md:text-2xl text-[#7F8188]'>{HERO.description}</h2>
         </div>
         <div className='flex md:gap-6 sm:gap-4 gap-3'>
-          <Link href='#work' onClick={(e)=> handleLinkClick(e, '#work')} className='lg:text-base text-sm w-[152px] flex justify-center items-center h-[56px] max-[425px]:w-[120px] max-[425px]:h-[46px] bg-zinc-800/40 font-medium rounded-full text-[#adb0b9]' >My work</Link>
-          <Link href='/about' className='lg:text-base text-sm w-[152px] flex justify-center items-center h-[56px] max-[425px]:w-[120px] max-[425px]:h-[46px] rounded-full font-medium text-[#adb0b9] border border-zinc-700/50' >About me</Link>
+          <Link href='#work' onClick={(e)=> handleLinkClick(e, '#work')} className='lg:text-base text-sm w-[152px] flex justify-center items-center h-[56px] max-[425px]:w-[120px] max-[425px]:h-[46px] bg-zinc-800/40 hover:bg-zinc-800/50 font-medium rounded-full text-[#adb0b9]' >My work</Link>
+          <Link href='/about' className='lg:text-base text-sm w-[152px] flex justify-center items-center h-[56px] max-[425px]:w-[120px] max-[425px]:h-[46px] rounded-full font-medium text-[#adb0b9] border border-zinc-700/50 hover:bg-zinc-800/20' >About me</Link>
         </div>
       </div>
     </section>
