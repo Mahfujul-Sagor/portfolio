@@ -1,4 +1,4 @@
-import { FOOTER_LINKS } from '@/constants'
+import { FOOTER_PAGES } from '@/constants'
 import Link from 'next/link'
 import React from 'react'
 
@@ -12,7 +12,7 @@ const Footer = () => {
         <div>
           <div>
             <p className='text-[#747265]'>Pages</p>
-            {FOOTER_LINKS.map((link, index) => (
+            {FOOTER_PAGES.map((link, index) => (
               <Link href={link.href} key={index} className='text-[#7F8188]'>{link.label}</Link>
             ))}
           </div>

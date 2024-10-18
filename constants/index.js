@@ -50,7 +50,7 @@ export const project4 = {
   mockup: "../public/mockups/desktop.avif",
 };
 
-export const FOOTER_LINKS = [
+export const FOOTER_PAGES = [
   { label: "Github", href: "https://github.com/Mahfujul-Sagor" },
   { label: "LinkedIn", href: "https://www.linkedin.com/in/mahfujul-sagor/" },
   { label: "X", href: "https://x.com/Mahfujul_Sagor" },
