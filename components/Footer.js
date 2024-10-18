@@ -1,4 +1,4 @@
-import { FOOTER_PAGES } from '@/constants'
+import { CONNECT_LINKS, FOOTER_PAGES } from '@/constants'
 import Link from 'next/link'
 import React from 'react'
 
@@ -9,12 +9,20 @@ const Footer = () => {
         <h2 className='text-white text-center lg:text-3xl md:text-2xl sm:text-xl'>
         👋 Thanks for stopping by! Here is more of me if you are interested :{")"}
         </h2>
-        <div>
-          <div>
-            <p className='text-[#747265]'>Pages</p>
-            {FOOTER_PAGES.map((link, index) => (
-              <Link href={link.href} key={index} className='text-[#7F8188]'>{link.label}</Link>
-            ))}
+        <div className='w-full flex justify-center items-center'>
+          <div className='w-full grid grid-cols-2'>
+            <div>
+              <p className='text-[#747265] capitalize'>Pages</p>
+              {FOOTER_PAGES.map((link, index) => (
+                <Link href={link.href} key={index} className='text-[#7F8188] capitalize'>{link.label}</Link>
+              ))}
+            </div>
+            <div className='flex flex-col gap-2'>
+              <p className='capitalize text-[#747265]'>Let&apos;s Connect</p>
+              {CONNECT_LINKS.map((link, index) => (
+                <a href={link.href} target='_blank' key={index} className='text-[#7F8188] capitalize'>{link.label}</a>
+              ))}
+            </div>
           </div>
         </div>
       </div>

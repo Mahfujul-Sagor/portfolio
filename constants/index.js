@@ -59,6 +59,6 @@ export const FOOTER_PAGES = [
 export const CONNECT_LINKS = [
   { label: "Github", href: "https://github.com/Mahfujul-Sagor" },
   { label: "LinkedIn", href: "https://www.linkedin.com/in/mahfujul-sagor/" },
-  { label: "X", href: "https://x.com/Mahfujul_Sagor" },
+  { label: "X (formerly Twitter)", href: "https://x.com/Mahfujul_Sagor" },
   { label: "Instagram", href: "https://www.instagram.com/mahfujul.sagor/" },
 ]
