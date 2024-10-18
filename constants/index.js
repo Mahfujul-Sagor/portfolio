@@ -62,3 +62,10 @@ export const CONNECT_LINKS = [
   { label: "X (formerly Twitter)", href: "https://x.com/Mahfujul_Sagor" },
   { label: "Instagram", href: "https://www.instagram.com/mahfujul.sagor/" },
 ]
+
+export const SELECTED_WORK = [
+  {label: "Project 1", href: '#work'},
+  {label: "Project 2", href: '#work'},
+  {label: "Project 3", href: '#work'},
+  {label: "Project 4", href: '#work'},
+]
