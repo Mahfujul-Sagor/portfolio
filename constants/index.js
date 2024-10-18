@@ -49,3 +49,10 @@ export const project4 = {
   liveLink: "https://github.com/Mahfujul-Sagor/next-portfolio",
   mockup: "../public/mockups/desktop.avif",
 };
+
+export const FOOTER_LINKS = [
+  { label: "Github", href: "https://github.com/Mahfujul-Sagor" },
+  { label: "LinkedIn", href: "https://www.linkedin.com/in/mahfujul-sagor/" },
+  { label: "X", href: "https://x.com/Mahfujul_Sagor" },
+  { label: "Instagram", href: "https://www.instagram.com/mahfujul.sagor/" },
+]
