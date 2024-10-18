@@ -51,6 +51,12 @@ export const project4 = {
 };
 
 export const FOOTER_PAGES = [
+  { label: "Home", href: "/" },
+  { label: "About", href: "/about" },
+  { label: "Contact", href: "/contact" },
+]
+
+export const CONNECT_LINKS = [
   { label: "Github", href: "https://github.com/Mahfujul-Sagor" },
   { label: "LinkedIn", href: "https://www.linkedin.com/in/mahfujul-sagor/" },
   { label: "X", href: "https://x.com/Mahfujul_Sagor" },
