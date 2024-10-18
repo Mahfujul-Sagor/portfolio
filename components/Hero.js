@@ -3,23 +3,22 @@ import { HERO } from '@/constants';
 import Link from 'next/link';
 import React from 'react'
 
+export const handleLinkClick = (e, href) => {
+  e.preventDefault();
+  const targetElement = document.querySelector(href);
+  if (targetElement) {
+    const offset = -85;
+    const elementPosition = targetElement.getBoundingClientRect().top;
+    const offsetPosition = elementPosition + window.scrollY + offset;
+
+    window.scrollTo({
+      top: offsetPosition,
+      behavior:"smooth",
+    });
+  }
+};
 
 const Hero = () => {
-  const handleLinkClick = (e, href) => {
-    e.preventDefault();
-    const targetElement = document.querySelector(href);
-    if (targetElement) {
-      const offset = -85;
-      const elementPosition = targetElement.getBoundingClientRect().top;
-      const offsetPosition = elementPosition + window.scrollY + offset;
-
-      window.scrollTo({
-        top: offsetPosition,
-        behavior:"smooth",
-      });
-    }
-  };
-
   return (
     <section className='absolute w-full flex flex-col justify-center items-center mt-40'>
       <div className='w-full max-w-[1300px] h-[910px] lg:px-20 md:px-14 px-8 lg:py-32 py-24 rounded-[6rem] bg-gradient-to-b from-[#1E1D1C] to-[#101010] flex flex-col items-center lg:gap-16 md:gap-14 sm:gap-12 gap-10'>
