@@ -1,3 +1,6 @@
+import ImageFlux from '@/public/images/ImageFlux.jpg';
+import iphone from '@/public/mockups/iphone.png';
+
 export const NAVIGATION_LINKS = [
   { label: "Work", href: "/" },
   {label: 'About', href: '/about'},
@@ -12,42 +15,42 @@ export const HERO = {
 
 export const project1 = {
   id: 1,
-  title: "Project 1",
-  image: "https://via.placeholder.com/400",
-  description: "Description 1",
-  githubLink: "https://github.com/Mahfujul-Sagor/next-portfolio",
-  liveLink: "https://github.com/Mahfujul-Sagor/next-portfolio",
-  mockup: "../public/mockups/desktop.avif",
+  title: "ImageFlux",
+  image: ImageFlux,
+  description: "Developed AI image enhancing software.",
+  githubLink: "https://github.com/Mahfujul-Sagor/ImageFlux",
+  liveLink: "https://github.com/Mahfujul-Sagor/ImageFlux",
+  mockup: iphone,
 };
 
 export const project2 = {
   id: 2,
   title: "Project 2",
-  image: "https://via.placeholder.com/400",
+  image: ImageFlux,
   description: "Description 2",
   githubLink: "https://github.com/Mahfujul-Sagor/next-portfolio",
   liveLink: "https://github.com/Mahfujul-Sagor/next-portfolio",
-  mockup: "../public/mockups/desktop.avif",
+  mockup: iphone,
 };
 
 export const project3 = {
   id: 3,
   title: "Project 3",
-  image: "https://via.placeholder.com/400",
+  image: ImageFlux,
   description: "Description 3",
   githubLink: "https://github.com/Mahfujul-Sagor/next-portfolio",
   liveLink: "https://github.com/Mahfujul-Sagor/next-portfolio",
-  mockup: "../public/mockups/desktop.avif",
+  mockup: iphone,
 };
 
 export const project4 = {
   id: 4,
   title: "Project 4",
-  image: "https://via.placeholder.com/400",
+  image: ImageFlux,
   description: "Description 4",
   githubLink: "https://github.com/Mahfujul-Sagor/next-portfolio",
   liveLink: "https://github.com/Mahfujul-Sagor/next-portfolio",
-  mockup: "../public/mockups/desktop.avif",
+  mockup: iphone,
 };
 
 export const FOOTER_PAGES = [
