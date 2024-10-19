@@ -1,5 +1,5 @@
 import ImageFlux from '@/public/images/ImageFlux.jpg';
-import mackbook from '@/public/images/mackbook.jpg';
+import Desktop from '@/public/images/Desktop.jpg';
 
 export const NAVIGATION_LINKS = [
   { label: "Work", href: "/" },
@@ -25,7 +25,7 @@ export const project1 = {
 export const project2 = {
   id: 2,
   title: "Project 2",
-  image: mackbook,
+  image: Desktop,
   description: "Description 2",
   githubLink: "https://github.com/Mahfujul-Sagor/next-portfolio",
   liveLink: "https://github.com/Mahfujul-Sagor/next-portfolio",
