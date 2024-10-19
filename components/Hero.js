@@ -21,7 +21,7 @@ export const handleLinkClick = (e, href) => {
 const Hero = () => {
   return (
     <section className='absolute w-full flex flex-col justify-center items-center mt-40'>
-      <div className='w-full max-w-[1300px] h-[910px] lg:px-20 md:px-14 px-8 lg:py-32 py-24 rounded-[6rem] bg-gradient-to-b from-[#1E1D1C] to-[#101010] flex flex-col items-center lg:gap-16 md:gap-14 sm:gap-12 gap-10'>
+      <div className='w-full max-w-[1300px] h-[950px] lg:px-20 md:px-14 px-8 lg:py-32 py-24 rounded-[6rem] bg-gradient-to-b from-[#1E1D1C] to-[#101010] flex flex-col items-center lg:gap-16 md:gap-14 sm:gap-12 gap-10'>
         <div className='text-center'>
           <h1 className='lg:text-7xl sm:text-5xl text-[32px] py-1 font-medium bg-clip-text text-transparent bg-gradient-to-b from-white to-[#7F8188]'>{HERO.name}</h1>
           <h2 className='lg:text-4xl md:text-3xl sm:text-2xl text-[#7F8188]'>{HERO.description}</h2>

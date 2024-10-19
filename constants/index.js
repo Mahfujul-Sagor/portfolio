@@ -1,5 +1,6 @@
 import ImageFlux from '@/public/images/ImageFlux.jpg';
 import Desktop from '@/public/images/Desktop.jpg';
+import ImageFluxIcon from '@/public/images/ImageFlux-icon.png';
 
 export const NAVIGATION_LINKS = [
   { label: "Work", href: "/" },
@@ -16,6 +17,7 @@ export const HERO = {
 export const project1 = {
   id: 1,
   title: "ImageFlux",
+  icon: ImageFluxIcon,
   label: "AI Image Enhancer",
   image: ImageFlux,
   description: "Developed AI image enhancing software.",
@@ -26,6 +28,7 @@ export const project1 = {
 export const project2 = {
   id: 2,
   title: "Project 2",
+  icon: ImageFluxIcon,
   label: "AI Image Enhancer",
   image: Desktop,
   description: "Developed AI image enhancing software.",
@@ -36,6 +39,7 @@ export const project2 = {
 export const project3 = {
   id: 3,
   title: "Project 3",
+  icon: ImageFluxIcon,
   label: "AI Image Enhancer",
   image: ImageFlux,
   description: "Developed AI image enhancing software.",
@@ -46,6 +50,7 @@ export const project3 = {
 export const project4 = {
   id: 4,
   title: "Project 4",
+  icon: ImageFluxIcon,
   label: "AI Image Enhancer",
   image: Desktop,
   description: "Developed AI image enhancing software.",
