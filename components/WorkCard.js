@@ -10,6 +10,7 @@ const WorkCard = ({
   width,
   top,
   backgroundColor,
+  label,
 }) => {
   return (
     <div
@@ -23,8 +24,10 @@ const WorkCard = ({
       <h2 className="text-3xl font-bold w-full text-start mt-10 mb-16">{title}</h2>
       <div className="flex max-md:flex-col-reverse justify-between items-center gap-16 w-full flex-1">
         <div className="flex flex-col justify-center items-start gap-10 flex-1">
-          <p className="text-[#7F8188] font-bold text-start">{label}</p>
-          <p className="sm:text-4xl text-3xl font-bold text-start">{description}</p>
+          <div className="space-y-2">
+            <p className="text-[#7F8188] font-bold text-start">{label}</p>
+            <p className="sm:text-4xl text-3xl font-bold text-start">{description}</p>
+          </div>
           <div className="flex max-sm:flex-col md:justify-start items-center gap-4 w-full justify-center">
             <a
               href={githubLink}
