@@ -16,6 +16,7 @@ export const HERO = {
 export const project1 = {
   id: 1,
   title: "ImageFlux",
+  label: "AI Image Enhancer",
   image: ImageFlux,
   description: "Developed AI image enhancing software.",
   githubLink: "https://github.com/Mahfujul-Sagor/ImageFlux",
@@ -25,6 +26,7 @@ export const project1 = {
 export const project2 = {
   id: 2,
   title: "Project 2",
+  label: "AI Image Enhancer",
   image: Desktop,
   description: "Developed AI image enhancing software.",
   githubLink: "https://github.com/Mahfujul-Sagor/next-portfolio",
@@ -34,6 +36,7 @@ export const project2 = {
 export const project3 = {
   id: 3,
   title: "Project 3",
+  label: "AI Image Enhancer",
   image: ImageFlux,
   description: "Developed AI image enhancing software.",
   githubLink: "https://github.com/Mahfujul-Sagor/next-portfolio",
@@ -43,6 +46,7 @@ export const project3 = {
 export const project4 = {
   id: 4,
   title: "Project 4",
+  label: "AI Image Enhancer",
   image: Desktop,
   description: "Developed AI image enhancing software.",
   githubLink: "https://github.com/Mahfujul-Sagor/next-portfolio",
