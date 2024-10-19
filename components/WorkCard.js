@@ -11,7 +11,6 @@ const WorkCard = ({
   top,
   backgroundColor,
   position,
-  mockup,
 }) => {
   return (
     <div
@@ -39,20 +38,13 @@ const WorkCard = ({
           Visit
         </a>
       </div>
-      <div className="relative flex justify-center items-center">
+      <div className="flex justify-center items-center">
         <Image
           src={image}
           alt=""
           width={280}
           height={1080}
-          className="rounded-[3rem] absolute -z-10"
-        />
-        <Image
-          src={mockup}
-          alt=""
           className=""
-          width={1920}
-          height={1080}
         />
       </div>
     </div>

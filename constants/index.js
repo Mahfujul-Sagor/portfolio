@@ -1,5 +1,5 @@
 import ImageFlux from '@/public/images/ImageFlux.jpg';
-import iphone from '@/public/mockups/iphone.png';
+import mackbook from '@/public/images/mackbook.jpg';
 
 export const NAVIGATION_LINKS = [
   { label: "Work", href: "/" },
@@ -20,17 +20,15 @@ export const project1 = {
   description: "Developed AI image enhancing software.",
   githubLink: "https://github.com/Mahfujul-Sagor/ImageFlux",
   liveLink: "https://github.com/Mahfujul-Sagor/ImageFlux",
-  mockup: iphone,
 };
 
 export const project2 = {
   id: 2,
   title: "Project 2",
-  image: ImageFlux,
+  image: mackbook,
   description: "Description 2",
   githubLink: "https://github.com/Mahfujul-Sagor/next-portfolio",
   liveLink: "https://github.com/Mahfujul-Sagor/next-portfolio",
-  mockup: iphone,
 };
 
 export const project3 = {
@@ -40,7 +38,6 @@ export const project3 = {
   description: "Description 3",
   githubLink: "https://github.com/Mahfujul-Sagor/next-portfolio",
   liveLink: "https://github.com/Mahfujul-Sagor/next-portfolio",
-  mockup: iphone,
 };
 
 export const project4 = {
@@ -50,7 +47,6 @@ export const project4 = {
   description: "Description 4",
   githubLink: "https://github.com/Mahfujul-Sagor/next-portfolio",
   liveLink: "https://github.com/Mahfujul-Sagor/next-portfolio",
-  mockup: iphone,
 };
 
 export const FOOTER_PAGES = [
