@@ -61,7 +61,7 @@ const Navbar = () => {
           <div className="flex items-center max-lg:justify-between gap-6 max-lg:w-full">
             <Link
               href="/"
-              className="font-bold lg:text-3xl text-2xl uppercase text-[#7F8188] bg-clip-text text-transparent bg-gradient-to-b from-white to-gray-700"
+              className="font-bold text-4xl uppercase text-[#7F8188] bg-clip-text text-transparent bg-gradient-to-b from-white to-gray-700"
             >
               MAS
             </Link>

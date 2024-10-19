@@ -26,7 +26,7 @@ export const project2 = {
   id: 2,
   title: "Project 2",
   image: Desktop,
-  description: "Description 2",
+  description: "Developed AI image enhancing software.",
   githubLink: "https://github.com/Mahfujul-Sagor/next-portfolio",
   liveLink: "https://github.com/Mahfujul-Sagor/next-portfolio",
 };
@@ -35,7 +35,7 @@ export const project3 = {
   id: 3,
   title: "Project 3",
   image: ImageFlux,
-  description: "Description 3",
+  description: "Developed AI image enhancing software.",
   githubLink: "https://github.com/Mahfujul-Sagor/next-portfolio",
   liveLink: "https://github.com/Mahfujul-Sagor/next-portfolio",
 };
@@ -43,8 +43,8 @@ export const project3 = {
 export const project4 = {
   id: 4,
   title: "Project 4",
-  image: ImageFlux,
-  description: "Description 4",
+  image: Desktop,
+  description: "Developed AI image enhancing software.",
   githubLink: "https://github.com/Mahfujul-Sagor/next-portfolio",
   liveLink: "https://github.com/Mahfujul-Sagor/next-portfolio",
 };
