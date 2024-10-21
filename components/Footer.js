@@ -23,7 +23,9 @@ const Footer = () => {
               </p>
               <Link
                 href={pathname === "/" ? "#home" : "/"}
-                onClick={(e) => (pathname === "/" ? handleLinkClick(e, '#home') : '/')}
+                onClick={(e) =>
+                  pathname === "/" ? handleLinkClick(e, "#home") : "/"
+                }
                 className="text-[#7F8188] text-[18px] capitalize font-bold hover:text-white max-sm:text-sm"
               >
                 Home
@@ -45,8 +47,10 @@ const Footer = () => {
               </p>
               {SELECTED_WORK.map((link, index) => (
                 <Link
-                  href={link.href}
-                  onClick={(e) => handleLinkClick(e, "#work")}
+                  href={pathname === "/" ? link.href : '/'}
+                  onClick={(e) =>
+                    pathname === "/" ? handleLinkClick(e, link.href) : "/"
+                  }
                   key={index}
                   className="text-[#7F8188] text-[18px] capitalize font-bold hover:text-white max-sm:text-sm"
                 >

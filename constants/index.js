@@ -70,7 +70,7 @@ export const CONNECT_LINKS = [
 ]
 
 export const SELECTED_WORK = [
-  {label: "Project 1", href: '#work'},
+  {label: "ImageFlux", href: '#work'},
   {label: "Project 2", href: '#work'},
   {label: "Project 3", href: '#work'},
   {label: "Project 4", href: '#work'},
