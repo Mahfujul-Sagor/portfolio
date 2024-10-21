@@ -58,7 +58,6 @@ export const project4 = {
 };
 
 export const FOOTER_PAGES = [
-  { label: "Home", href: "/" },
   { label: "About", href: "/about" },
   { label: "Contact", href: "/contact" },
 ]
