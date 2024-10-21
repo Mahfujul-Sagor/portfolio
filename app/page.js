@@ -1,6 +1,5 @@
 "use client";
 import Hero from "@/components/Hero";
-import Skills from "@/components/Skills";
 import Work from "@/components/Work";
 
 export default function Home() {
@@ -12,7 +11,6 @@ export default function Home() {
         <Work />
       </div>
       <div className="w-full min-h-screen"></div>
-      <Skills />
     </main>
   );
 }
