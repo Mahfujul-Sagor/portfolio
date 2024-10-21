@@ -6,8 +6,10 @@ import Link from "next/link";
 import { CgMenuRight } from "react-icons/cg";
 import { CgClose } from "react-icons/cg";
 import { handleLinkClick } from "./Hero";
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
+  const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -15,7 +17,7 @@ const Navbar = () => {
   };
 
   const linkClick = (e) => {
-    setIsOpen(!open);
+    setIsOpen(!isOpen);
     handleLinkClick(e, "#work");
   };
 
@@ -74,9 +76,9 @@ const Navbar = () => {
             <ul className="items-center gap-6 lg:flex hidden">
               <li>
                 <Link
-                  href="#word"
+                  href={pathname === "/" ? "#work" : "/"}
                   className="text-[#7F8188] hover:text-white capitalize font-medium"
-                  onClick={(e) => linkClick(e)}
+                  onClick={(e) => (pathname === "/" ? linkClick(e) : setIsOpen(!isOpen))}
                 >
                   Work
                 </Link>
@@ -85,8 +87,8 @@ const Navbar = () => {
                 <li key={index}>
                   <Link
                     href={item.href}
-                    className="text-[#7F8188] hover:text-white font-medium"
-                    onClick={() => setIsOpen(!open)}
+                    className="text-[#7F8188] hover:text-white capitalize font-medium"
+                    onClick={() => setIsOpen(!isOpen)}
                   >
                     {item.label}
                   </Link>
@@ -115,9 +117,9 @@ const Navbar = () => {
             <ul className="items-center gap-6 lg:hidden justify-center flex flex-col w-full my-6">
               <li>
                 <Link
-                  href="#word"
+                  href={pathname === "/" ? "#work" : "/"}
                   className="text-[#7F8188] hover:text-white capitalize font-medium"
-                  onClick={(e) => linkClick(e)}
+                  onClick={(e) => (pathname === "/" ? linkClick(e) : setIsOpen(!isOpen))}
                 >
                   Work
                 </Link>
@@ -126,8 +128,8 @@ const Navbar = () => {
                 <li key={index}>
                   <Link
                     href={item.href}
-                    className="text-[#7F8188] hover:text-white font-medium"
-                    onClick={() => setIsOpen(!open)}
+                    className="text-[#7F8188] hover:text-white capitalize font-medium"
+                    onClick={() => setIsOpen(!isOpen)}
                   >
                     {item.label}
                   </Link>

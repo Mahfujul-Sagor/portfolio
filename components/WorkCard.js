@@ -15,7 +15,7 @@ const WorkCard = ({
 }) => {
   return (
     <div
-      className={`card md:sticky relative text-white border flex flex-col justify-between items-center border-zinc-800/50 w-full rounded-[4rem] min-h-[80vh] sm:p-8 p-6 text-center`}
+      className={`card md:sticky relative text-white border flex flex-col justify-between items-center border-zinc-800/80 w-full rounded-[4rem] min-h-[80vh] sm:p-8 p-6 text-center`}
       style={{
         maxWidth: width,
         top: top ? top : "",
