@@ -5,12 +5,18 @@ import { NAVIGATION_LINKS } from "@/constants";
 import Link from "next/link";
 import { CgMenuRight } from "react-icons/cg";
 import { CgClose } from "react-icons/cg";
+import { handleLinkClick } from "./Hero";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
+  };
+
+  const linkClick = (e) => {
+    setIsOpen(!open);
+    handleLinkClick(e, "#work");
   };
 
   const now = new Date();
@@ -66,12 +72,21 @@ const Navbar = () => {
               MAS
             </Link>
             <ul className="items-center gap-6 lg:flex hidden">
+              <li>
+                <Link
+                  href="#word"
+                  className="text-[#7F8188] hover:text-white capitalize font-medium"
+                  onClick={(e) => linkClick(e)}
+                >
+                  Work
+                </Link>
+              </li>
               {NAVIGATION_LINKS.map((item, index) => (
                 <li key={index}>
                   <Link
                     href={item.href}
                     className="text-[#7F8188] hover:text-white font-medium"
-                    onClick={()=> setIsOpen(!open)}
+                    onClick={() => setIsOpen(!open)}
                   >
                     {item.label}
                   </Link>
@@ -88,7 +103,7 @@ const Navbar = () => {
                     {isOpen ? (
                       <CgClose className="h-8 w-8" />
                     ) : (
-                      <CgMenuRight className="h-8 w-8"/>
+                      <CgMenuRight className="h-8 w-8" />
                     )}
                   </button>
                 </div>
@@ -98,12 +113,21 @@ const Navbar = () => {
           {/* Mobile Menu */}
           {isOpen && (
             <ul className="items-center gap-6 lg:hidden justify-center flex flex-col w-full my-6">
+              <li>
+                <Link
+                  href="#word"
+                  className="text-[#7F8188] hover:text-white capitalize font-medium"
+                  onClick={(e) => linkClick(e)}
+                >
+                  Work
+                </Link>
+              </li>
               {NAVIGATION_LINKS.map((item, index) => (
                 <li key={index}>
                   <Link
                     href={item.href}
                     className="text-[#7F8188] hover:text-white font-medium"
-                    onClick={()=> setIsOpen(!open)}
+                    onClick={() => setIsOpen(!open)}
                   >
                     {item.label}
                   </Link>

@@ -3,7 +3,6 @@ import Desktop from '@/public/images/Desktop.jpg';
 import ImageFluxIcon from '@/public/images/ImageFlux-icon.png';
 
 export const NAVIGATION_LINKS = [
-  { label: "Work", href: "/" },
   {label: 'About', href: '/about'},
   { label: "Contact", href: "/contact" },
 ];
