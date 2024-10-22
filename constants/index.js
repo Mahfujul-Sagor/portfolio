@@ -33,6 +33,24 @@ export const EDUCATION = {
   year: "2024 - 2028",
 }
 
+export const SKILLS = {
+  title: "Skills / Clubs",
+}
+
+export const TECHNICAL_SKILLS = {
+  title: "Technical",
+  skills: "MERN Stack, Next.js, React Native, Expo, TailwindCSS, JavaScript, TypeScript, HTML, CSS, RESTful APIs, GraphQL, Framer Motion, MySQL, Prisma, Appwrite, Cloudinary, SWR , authjs, Git, Vercel, npm, CI/CD",
+}
+
+export const SOFT_SKILLS = {
+  title: "Soft Skills",
+  skills: "Leadership, Teamwork, Problem Solving, Organization, Empathy, Growth Mindset, Curiosity, Technical Communication, Adaptability, Collaboration",
+}
+
+export const CLUBS = {
+  title: "Clubs",
+  clubs: "Startup Shell (Tech Lead + Partnerships) | Hack4Impact (Software Engineer) | Bitcamp (Coding Mentor) | Technica (Coding Mentor) | Club Soccer | DEV Terps | XR Club", 
+}
 
 export const project1 = {
   id: 1,
