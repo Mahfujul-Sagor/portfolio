@@ -1,4 +1,4 @@
-import { ABOUT_HEADER, BACKGROUND } from "@/constants";
+import { ABOUT_HEADER, BACKGROUND, EDUCATION } from "@/constants";
 import Image from "next/image";
 import React from "react";
 
@@ -23,6 +23,12 @@ const About = () => {
           <p>{BACKGROUND.college}</p>
           <p>{BACKGROUND.conclusion}</p>
         </div>
+      </div>
+      <div>
+        <div>
+          <Image src={EDUCATION.logo} width={120} height={120} alt="MBSTU"/>
+        </div>
+        <div></div>
       </div>
     </div>
   );

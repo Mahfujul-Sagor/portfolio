@@ -1,6 +1,7 @@
 import ImageFlux from '@/public/images/ImageFlux.jpg';
 import Desktop from '@/public/images/Desktop.jpg';
 import ImageFluxIcon from '@/public/images/ImageFlux-icon.png';
+import mbstu from "@/public/images/mbstu.png";
 
 export const NAVIGATION_LINKS = [
   {label: 'About', href: '/about'},
@@ -22,6 +23,14 @@ export const BACKGROUND = {
   childhood: "Growing up, I was passionate about technology, football, and creating things from scratch. Football taught me teamwork, leadership, and discipline, while my curiosity for tech led me to explore how to build systems that make a real impact.",
   college: "In college, I found full stack development as the perfect blend of creativity and logic. Building web and mobile apps became my focus, and I learned to balance the front and back end to create seamless user experiences. Though I’m not a UX/UI designer, my work ensures products are user-friendly and functional.",
   conclusion: "With that being said, I hope my unique approach to full stack development can not only make the apps and systems I build more efficient and intuitive but also make our interaction with technology smoother and more integrated into our daily lives.",
+}
+
+export const EDUCATION = {
+  title: "Education",
+  logo: mbstu,
+  university: "Mawlana Bhashani Science and Technology University",
+  degree: "Bachelor of Science in Mechanical Engineering",
+  year: "2024 - 2028",
 }
 
 
