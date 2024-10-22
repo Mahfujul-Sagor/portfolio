@@ -39,7 +39,7 @@ export const SKILLS = {
 
 export const TECHNICAL_SKILLS = {
   title: "Technical",
-  skills: "MERN Stack, Next.js, React Native, Expo, TailwindCSS, JavaScript, TypeScript, HTML, CSS, RESTful APIs, GraphQL, Framer Motion, MySQL, Prisma, Appwrite, Cloudinary, SWR , authjs, Git, Vercel, npm, CI/CD",
+  skills: "MERN Stack, Next.js, React Native, Expo, TailwindCSS, JavaScript, TypeScript, RESTful APIs, Framer Motion, Three.js, MySQL, Prisma, Appwrite, Cloudinary, SWR, Clerk, auth.js, Git, Vercel, Netlify, npm, CI/CD, Nodemon, Figma, Framer",
 }
 
 export const SOFT_SKILLS = {
