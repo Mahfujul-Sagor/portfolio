@@ -1,4 +1,4 @@
-import { ABOUT_HEADER } from "@/constants";
+import { ABOUT_HEADER, BACKGROUND } from "@/constants";
 import Image from "next/image";
 import React from "react";
 
@@ -13,8 +13,16 @@ const About = () => {
           {ABOUT_HEADER.description}
         </h2>
       </div>
-      <div>
-
+      <div className="w-full max-w-[1300px] mx-auto">
+        <h3 className="uppercase text-center text-[#7F8188] md:text-3xl text-2xl">
+          {BACKGROUND.title}
+        </h3>
+        <div className="text-[#979797] md:text-xl text-base space-y-4">
+          <p>{BACKGROUND.currentPosition}</p>
+          <p>{BACKGROUND.childhood}</p>
+          <p>{BACKGROUND.college}</p>
+          <p>{BACKGROUND.conclusion}</p>
+        </div>
       </div>
     </div>
   );
