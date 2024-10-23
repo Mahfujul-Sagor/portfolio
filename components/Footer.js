@@ -9,7 +9,7 @@ const Footer = () => {
   const pathname = usePathname();
   return (
     <div className="w-full px-2">
-      <div className="w-full max-w-[1300px] min-h-[380px] flex flex-col gap-8 items-center justify-between bg-[#1E1D1C] border border-zinc-800/50 mx-auto rounded-t-[2rem] py-16 sm:px-6 px-4">
+      <div className="w-full max-w-[1300px] min-h-[380px] flex flex-col gap-8 items-center justify-between bg-[#1E1D1C] border border-zinc-800 mx-auto rounded-t-[2rem] py-16 sm:px-6 px-4">
         <h2 className="text-white text-center lg:text-3xl md:text-2xl sm:text-xl">
           👋 Thanks for stopping by! Here is more of me if you are interested :
           {")"}

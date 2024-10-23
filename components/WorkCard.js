@@ -15,7 +15,7 @@ const WorkCard = ({
 }) => {
   return (
     <div
-      className={`card md:sticky text-white border flex flex-col justify-between items-center border-zinc-800/80 w-full rounded-[4rem] min-h-[80vh] sm:px-8 lg:px-20 sm:py-8 p-6 text-center`}
+      className={`card md:sticky text-white border flex flex-col justify-between items-center border-zinc-800 w-full rounded-[4rem] min-h-[80vh] sm:px-8 lg:px-20 sm:py-8 p-6 text-center`}
       style={{
         maxWidth: width,
         top: top ? top : "",
@@ -40,14 +40,14 @@ const WorkCard = ({
             <a
               href={githubLink}
               target="_blank"
-              className="max-md:w-full py-5 px-16  bg-zinc-800/40 hover:bg-zinc-800/50 font-medium rounded-full text-[#adb0b9]"
+              className="max-md:w-full py-5 px-16 border border-zinc-700/50 font-medium rounded-full text-[#adb0b9] hover:bg-zinc-800/50"
             >
               Github
             </a>
             <a
               href={liveLink}
               target="_blank"
-              className="max-md:w-full py-5 px-16  rounded-full font-medium text-[#adb0b9] border border-zinc-700/50 hover:bg-zinc-800/20"
+              className="max-md:w-full py-5 px-16 rounded-full font-medium text-[#adb0b9] border border-zinc-700/50 hover:bg-zinc-800/50"
             >
               Visit
             </a>
