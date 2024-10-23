@@ -1,5 +1,7 @@
 import Image from "next/image";
 import React from "react";
+import { FaGithub } from "react-icons/fa";
+import { CiLocationArrow1 } from "react-icons/ci";
 
 const WorkCard = ({
   description,
@@ -40,16 +42,16 @@ const WorkCard = ({
             <a
               href={githubLink}
               target="_blank"
-              className="max-md:w-full py-5 px-16 border border-zinc-700/50 font-medium rounded-full text-[#adb0b9] hover:bg-zinc-800/50"
+              className="max-md:w-full flex justify-center items-center gap-2 py-5 px-16 border border-zinc-700/50 font-medium rounded-full text-[#adb0b9] hover:bg-zinc-800/80"
             >
-              Github
+              <FaGithub className="text-xl" />Github
             </a>
             <a
               href={liveLink}
               target="_blank"
-              className="max-md:w-full py-5 px-16 rounded-full font-medium text-[#adb0b9] border border-zinc-700/50 hover:bg-zinc-800/50"
+              className="max-md:w-full flex justify-center items-center gap-2 py-5 px-16 rounded-full font-medium text-[#adb0b9] border border-zinc-700/80 hover:bg-zinc-800/50"
             >
-              Visit
+              <CiLocationArrow1 className="text-xl" />Visit
             </a>
           </div>
         </div>
