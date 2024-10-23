@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
         style={{ fontFamily: "var(--font-roboto-regular), sans-serif" }}
       >
         <Navbar />
-        <div className="w-full px-2">
+        <div className="w-full px-3">
           <Cursor /> 
           {children}
         </div>
