@@ -24,9 +24,10 @@ const About = () => {
           <p>{BACKGROUND.conclusion}</p>
         </div>
       </div>
+      {/* education */}
       <div className="w-full max-w-[1300px] mx-auto space-y-16 mt-16">
         <h3 className="uppercase text-center text-[#7F8188] md:text-3xl text-2xl">{EDUCATION.title}</h3>
-        <div className="w-full bg-[#1E1D1C] space-y-8 border border-zinc-800/50 rounded-[1.5rem] py-10 px-16">
+        <div className="w-full bg-[#1E1D1C] space-y-8 border border-zinc-800/50 rounded-[1.5rem] sm:py-10 sm:px-16 py-8 px-8">
           <div className="flex gap-8 justify-start items-center">
             <Image src={EDUCATION.logo} width={100} height={100} alt="MBSTU"/>
             <div className="space-y-2">
@@ -39,20 +40,21 @@ const About = () => {
           </div>
         </div>
       </div>
+      {/* skills */}
       <div className="w-full max-w-[1300px] mx-auto space-y-16 mt-16">
         <h3 className="uppercase text-center text-[#7F8188] md:text-3xl text-2xl">{SKILLS.title}</h3>
         <div className="space-y-4 w-full">
           <div className="flex max-md:flex-col gap-4">
-            <div className="w-full bg-[#1E1D1C] space-y-4 border border-zinc-800/50 rounded-[1.5rem] py-10 px-16">
+            <div className="w-full bg-[#1E1D1C] space-y-4 border border-zinc-800/50 rounded-[1.5rem] sm:py-10 sm:px-16 py-8 px-8">
               <h4 className="text-white font-bold md:text-3xl sm:text-2xl">{TECHNICAL_SKILLS.title}</h4>
               <p className="text-[#979797] md:text-xl text-base">{TECHNICAL_SKILLS.skills}</p>
             </div>
-            <div className="w-full bg-[#1E1D1C] space-y-4 border border-zinc-800/50 rounded-[1.5rem] py-10 px-16">
+            <div className="w-full bg-[#1E1D1C] space-y-4 border border-zinc-800/50 rounded-[1.5rem] sm:py-10 sm:px-16 py-8 px-8">
               <h4 className="text-white font-bold md:text-3xl sm:text-2xl">{SOFT_SKILLS.title}</h4>
               <p className="text-[#979797] md:text-xl text-base">{SOFT_SKILLS.skills}</p>
             </div>
           </div>
-          <div className="w-full bg-[#1E1D1C] space-y-4 border border-zinc-800/50 rounded-[1.5rem] py-10 px-16">
+          <div className="w-full bg-[#1E1D1C] space-y-4 border border-zinc-800/50 rounded-[1.5rem] sm:py-10 sm:px-16 py-8 px-8">
             <h4 className="text-white font-bold md:text-3xl sm:text-2xl">{CLUBS.title}</h4>
             <p className="text-[#979797] md:text-xl text-base">{CLUBS.clubs}</p>
           </div>
