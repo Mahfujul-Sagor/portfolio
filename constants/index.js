@@ -49,7 +49,7 @@ export const SOFT_SKILLS = {
 
 export const CLUBS = {
   title: "Clubs",
-  clubs: "Startup Shell (Tech Lead + Partnerships) | Hack4Impact (Software Engineer) | Bitcamp (Coding Mentor) | Technica (Coding Mentor) | Club Soccer | DEV Terps | XR Club", 
+  clubs: "Startup Shell (Tech Lead + Partnerships) | Hack4Impact (Software Engineer) | Bitcamp (Coding Mentor) | Technica (Coding Mentor) | Football Club | DEV Terps | XR Club", 
 }
 
 export const project1 = {
